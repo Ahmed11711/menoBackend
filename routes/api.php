@@ -25,3 +25,9 @@ use Illuminate\Support\Facades\Route;
 Route::apiResource('categories', MenuoController::class);
 Route::apiResource('products', ProductController::class);
 Route::get('/categories/{id}/products', [ProductController::class, 'products']); // 👈 هذا الجديد
+
+
+Route::get('ss', function () {
+
+    return 'ss';
+});
